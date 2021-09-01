@@ -1,0 +1,8 @@
+EXEC('
+RESTORE HEADERONLY 
+   FROM DISK=''' + 'D:\Yedekler\maliyet.bak' + ''' WITH FILE = 1
+   ')
+EXEC('
+RESTORE FILELISTONLY 
+   FROM DISK=''' + 'D:\Yedekler\maliyet.bak' + '''
+   ')
